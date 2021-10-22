@@ -22,4 +22,4 @@ A genetic algorithm with elitism and mutations developed from scratch in R in or
 
 ## OriginsRO market (Python)
 
-Scrapes data from an online game's market data using BeautifulSoup to find and alert about undervalued items.
+Scrapes data from an online game's market data using BeautifulSoup, and compares the value with similar items and historical averages to alert about undervalued items.
