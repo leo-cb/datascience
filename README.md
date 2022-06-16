@@ -23,3 +23,11 @@ A genetic algorithm with elitism and mutations developed from scratch in R in or
 ## OriginsRO market (Python)
 
 Scrapes data from an online game's market data using BeautifulSoup, and compares the value with similar items and historical averages to alert about undervalued items.
+
+## Synthetic stocks (R)
+
+Synthetic stock time-series have diverse uses, such as valuing financial options to backtesting strategies. This script creates a synthetic price time-series, based on historical prices of a given stock, by first fitting a gjrGARCH model and then using this model to simulate prices.
+
+**simulate_stock_garch_development.R** - fits a gjrGARCH(0,0)(1,1) with normal error distribution to "GOOGL" close prices log differences from Jan2010 to June2022. gjrGARCH was chosen as non-symmetric innovations are often observed in financial time-series. However, Pearson's goodness-of-fit rejected normality. Therefore, a gjrGARCH(0,0)(1,1) was fitted with t-student error distribution. Pearson's goodness-of-fit did not reject the assumed distribution and the residuals did not exhibit auto-correlation. Every parameter except for alpha1 (p-value approx. 0.2) showed a p-value < 0.01. A noteworthy observation is that negative returns impact on volatility was significantly higher than the positive returns', as seen by the "News impact curve". This model was chosen for production.
+
+**simulate_stock_garch_production.R** - Fits a gjrGARCH(0,0)(1,1) to the chosen ticker's ("GOOGL" by default) close prices log differences and outputs synthetic close prices time-series.
