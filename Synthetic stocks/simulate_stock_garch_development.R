@@ -46,7 +46,7 @@ s2$logdiff = c(NA,diff(log(s2$adjClose)))
 s2 = s2[2:nrow(s2),]
   
 # fit gjr GARCH with normal distribution
-mod_specify = ugarchspec(mean.model=list(armaOrder=c(0,0)),variance.model=list(model="gjrGARCH",garchOrder=c(1,1)),distribution.model="ssd")
+mod_specify = ugarchspec(mean.model=list(armaOrder=c(0,0)),variance.model=list(model="gjrGARCH",garchOrder=c(1,1)))
 mod_fitting = ugarchfit(data=s2$logdiff,spec=mod_specify)
 mod_fitting
 plot(mod_fitting)
