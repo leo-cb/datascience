@@ -18,7 +18,7 @@ Two main improvements can be made:
   
 ## News Sentiment (Python)
 
-This trading system uses a dataset that is created from the sentiment analysis of news headlines for the Fortune 500 stocks, retrieving this data from Aylien's news API. The dataset has two key metrics: the positive daily news sentiment, and the negative daily news sentiment. Each one of these may have a value of 0 or a positive number. It may be the case, for example, that both positive and negative sentiment show a positive value, which would mean there were both positive and negative news during that specific day.
+This trading system uses a dataset that is created from the sentiment analysis of news headlines for the Fortune 500 stocks (https://www.kaggle.com/datasets/parsabg/stocknewseventssentiment-snes-10). This dataset was retrieved from Aylien's news API. The dataset has two key metrics: the positive daily news sentiment, and the negative daily news sentiment. Each one of these may have a value of 0 or a positive number. It may be the case, for example, that both positive and negative sentiment show a positive value, which would mean there were both positive and negative news during that specific day.
 
 The OHLC data for each stock and S&P500 were obtained from Yahoo Finance.
 
