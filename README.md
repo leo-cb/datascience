@@ -33,7 +33,7 @@ A portfolio that attempts to minimize the variance (e.g. choose a set of uncorre
 
 The date range for this analysis was from 2010-01-01 to 2020-01-01 (no time overlap with the backtesting data).
 
-<strong>Results (2020-09-30 to 2022-06-30):</strong>
+<strong>Results</strong> (2020-09-30 to 2022-06-30):
 
 The aforementioned sentiment data was available from 2020-09-30 to 2022-06-30 (21 months), which limited the backtesting period. For this reason, although the obtained results were promising (a quite high Sharpe ratio compared to the benchmark, low maximum drawdown), it would be necessary to obtain more sentiment data to test the algorithm on a larger timeframe.
 
