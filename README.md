@@ -24,20 +24,20 @@ The OHLC data for each stock and S&P500 were obtained from Yahoo Finance.
 
 I created the strategy, along with a basic backtesting system and functions to retrieve the strategy's basic metrics on Python, using the pandas and scikit-learn libraries.
 
-Trading algorithm:
+<strong>Trading algorithm:</strong>
 When the positive sentiment > 0, enter a long trade on the closing price of the next day
 Close the trade when the negative sentiment > 0
 
-Portfolio selection: 
+<strong>Portfolio selection:</strong>
 A portfolio that attempts to minimize the variance (e.g. choose a set of uncorrelated Fortune 500 stocks) is created by a sparse PCA: for an universe of 500 stocks, the first 50 components are obtained, and the stocks chosen for the portfolio are the ones who correlate the most with each one of these components. Since the components are approximately uncorrelated to each other, the chosen stocks are also expected to be the least correlated to each other as possible, therefore creating a minimum variance portfolio with a non-parametric method. The final included number of stocks in the portfolio were 42, as some stocks correlated the most with more than one component.
 
 The date range for this analysis was from 2010-01-01 to 2020-01-01 (no time overlap with the backtesting data).
 
-Results (2020-09-30 to 2022-06-30):
+<strong>Results (2020-09-30 to 2022-06-30):</strong>
 
 The aforementioned sentiment data was available from 2020-09-30 to 2022-06-30 (21 months), which limited the backtesting period. For this reason, although the obtained results were promising (a quite high Sharpe ratio compared to the benchmark, low maximum drawdown), it would be necessary to obtain more sentiment data to test the algorithm on a larger timeframe.
 
-Strategy:
+<strong>Strategy:</strong>
 
 ROI: 35.14%
 Sharpe ratio (2% risk-free i.r.): 1.69
