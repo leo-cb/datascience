@@ -68,7 +68,7 @@ Synthetic stock time-series have diverse uses, such as valuing financial options
 
 ## Dow Jones Best Stock (Python)
 
-Predicts the best performing stock of Dow Jones index on the following week, based on the previous week price and volume data. Some features such as traded volume (price * volume), performance ranking, volume growth ranking are created. Uses XGBoost to perform binary classification, obtaining a recall close to 50% and AUC close to 0.8.
+Predicts the best performing stock of Dow Jones index on the following week, based on the previous week price and volume data. Some features such as traded volume (price * volume), performance ranking, volume growth ranking are created. Uses XGBoost to perform binary classification, and does hyperparameter optimization of two hyperparameters. Obtained a precision of 48%, recall of 50% and AUC of 0.7.
 
 ## OriginsRO market (Python)
 
