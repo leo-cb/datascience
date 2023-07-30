@@ -1,0 +1,66 @@
+This dataset was first used in:
+Brown, M. S., Pelosi, M. & Dirska, H. (2013). Dynamic-radius Species-conserving Genetic Algorithm for 
+the Financial Forecasting of Dow Jones Index Stocks. Machine Learning and Data Mining in Pattern 
+Recognition, 7988, 27-41.
+
+Number of Instances
+There are 750 data records.  360 are from the first quarter of the year (Jan to Mar)
+390 are from the second quarter of the year (Apr to Jun).
+
+Number of Attributes
+There are 16 attributes. 
+
+For each Attribute
+	quarter:  the yearly quarter (1=Jan-Mar; 2=Apr-Jun)
+	stock: the stock symbol (see below)
+	date: the last business day of the work (this is typically a Friday)
+	open: the price of the stock at the beginning of the week
+	high: the highest price of the stock during the week
+	low: the lowest price of the stock during the week
+	close: the price of the stock at the end of the week
+	volume: the number of shares of stock that traded hands in the week
+	percent_change_price: the percentage change in price throughout the week
+	percent_change_volume_over_last_week: the percentage change in the number of shares of stock that traded hands for this week compared to the previous week
+	previous_weeks_volume: the number of shares of stock that traded hands in the previous week
+	next_weeks_open: the opening price of the stock in the following week
+	next_weeks_close: the closing price of the stock in the following week
+	percent_change_next_weeks_price: the percentage change in price of the stock in the 
+	following week days_to_next_dividend: the number of days until the next dividend
+	percent_return_next_dividend: the percentage of return on the next dividend
+
+
+List of stocks in the dataset:
+		3M		 	MMM
+		American Express 	AXP
+		Alcoa			AA
+		AT&T 			T
+		Bank of America		BAC
+		Boeing 		 	BA
+		Caterpillar 	 	CAT
+		Chevron 	 	CVX
+		Cisco Systems 		CSCO
+		Coca-Cola 	 	KO
+		DuPont 		 	DD
+		ExxonMobil 	 	XOM
+		General Electric 	GE
+		Hewlett-Packard		HPQ
+		The Home Depot 	 	HD
+		Intel 		 	INTC
+		IBM 		 	IBM
+		Johnson & Johnson 	JNJ	
+		JPMorgan Chase 	 	JPM
+		Kraft			KRFT
+		McDonald's 		MCD
+		Merck 		 	MRK
+		Microsoft 	 	MSFT
+		Pfizer 		 	PFE
+		Procter & Gamble 	PG
+		Travelers 	 	TRV
+		United Technologies 	UTX
+		Verizon 	 	VZ
+		Wal-Mart 	 	WMT
+		Walt Disney 	 	DIS
+ 
+
+
+
